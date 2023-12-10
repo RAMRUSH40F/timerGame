@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень 3</title>
+    <link rel="stylesheet" href="level3.css">
+    <link rel="stylesheet" href="../main/main.css">  
+</head>
+<body>
+    <div class="ui-info">
+        <button class="menu-part button-level" id="back">В меню</button>
+        <div class="ui-element info"> нажмите на кнопку для начала игры</div>
+    </div>
+    <div >
+        <div class="bomb-container">
+            <img id="gate1" class="gate" src="../img/gate.png">
+            <div class="bomb">
+                <p class="bomb-timer">0:00</p>
+            </div>
+            <img id="gate2" class="gate" src="../img/gate.png">
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="red-button"></div>
+        </div>
+        
+    </div>
+
+    <div class="modal modal-open">
+        <div class="modal-content content-open">
+            
+                <div class="modal-content-text">
+                    <h2 class="modal-text">Уровень 3</h2>
+                    <p class="modal-text">	Для того, чтобы разминировать бомбу, нужно нажать на кнопку как можно ближе к концу таймера</p>
+                    <p class="modal-text"> Сложность влияет на скорось закрытия таймера </p>
+                </div>
+                
+                <p class="modal-text">Выбор сложности</p>
+            <select id="difficulty">
+                <option value="0.75">Легкая</option>
+                <option value="0.5">Нормальная</option>
+                <option value="0.25">Сложная</option>
+                <option value="0.1">Экспертная</option>
+            </select>
+            <div style="display: flex;">
+                <button id="start-game" class="modal-button" > начать</button>
+                <button class="modal-button" id="back1">В меню</button>
+            </div>
+    </div>
+</body>
+
+<script src="../main/saveScore.js"></script>
+<script src="level3.js"></script>
+</html>

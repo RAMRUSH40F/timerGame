@@ -1,0 +1,14 @@
+html, body { 
+    width:100%; 
+ }
+ html{
+    height: 130%!important;
+ }
+body{
+    display:table;
+   
+}
+canvas { 
+    display:block;
+    border: 3px black solid;
+} 

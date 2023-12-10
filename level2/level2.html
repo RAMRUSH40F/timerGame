@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="level2.css">
+    <link rel="stylesheet" href="../main/main.css">  
+
+</head>
+
+
+<body>
+	<div style="display: flex; flex-direction: column;">
+		<div class="ui-info">
+			<button  class="menu-part button-level" id="back">В меню</button>
+			<div class="ui-element info"> Уклоняйтесь от шаров</div>
+		</div>
+		<canvas width="1080" height="575" class="canvas-balls" id='canvas_example'></canvas>
+	</div>
+	
+
+	<body style="background-color:#eee0ff;"></body>
+	<div class="modal modal-open">
+        <div class="modal-content content-open">
+            
+                <div class="modal-content-text">
+                    <h2 class="modal-text">Уровень 2</h2>
+                    <p class="modal-text">Уклоняйтесь от движущихся шариков. Собирайте желтые шары</p>
+                    <p class="modal-text"> Сложность влияет на скорость движения и количество шаров</p>
+                </div>
+                
+                <p class="modal-text">Выбор сложности</p>
+            <select id="difficulty">
+                <option value="3">Легкая</option>
+                <option value="5">Нормальная</option>
+                <option value="7">Сложная</option>
+                <option value="10">Экспертная</option>
+            </select>
+            <div style="display: flex;">
+                <button id="start-game" class="modal-button" >Начать</button>
+                <button class="modal-button" id="back1">В меню</button>
+            </div>
+    </div>
+</body>
+<script src='ball_class.js'></script>
+<script src='script.js'></script>
+<script src="../main/saveScore.js"></script>
+<script src="../level2/level2.js"></script>
+</HTML>

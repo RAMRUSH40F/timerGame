@@ -1,0 +1,60 @@
+img{
+    max-width: 100%;
+}
+.lamp-block{
+    width: 30%;
+}
+.wired{
+    width: 60%;
+    position: relative;
+    top:43vh;
+    height: 12px;
+    background-color: blue;
+}
+.lamp{
+    width: 70%;
+    margin: auto;
+    margin-left: 15%;
+    position: relative;
+    top: 70px;
+}
+@media (max-width: 950px) {
+    .lamp{
+        top: 50px;
+    }
+    
+}
+@media (max-width: 650px) {
+    .lamp{
+        top: 30px;
+    }
+    
+}
+@media (max-width: 850px) {
+    
+}
+@media (max-width: 700px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-around;
+    }
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 3%;
+    max-height: 80%;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}

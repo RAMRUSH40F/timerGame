@@ -1,0 +1,74 @@
+.bomb-container{
+    display: flex;
+    margin: 5%;
+}
+img{
+    max-width: 100%;
+}
+.gate{
+    width: 25%;
+    animation-fill-mode: forwards;
+}
+#gate1{
+    z-index: 1;
+    position: relative;
+    margin-right: 5%;
+
+}
+#gate2{
+    position: relative;
+    margin-left: 5%;
+}
+@keyframes gate1{
+    100%{
+        transform: translateX(100%)
+    }
+}
+@keyframes gate2{
+    100%{
+        transform: translateX(-100%)
+    }
+}
+.gate1move{
+    animation: gate1 linear 1s;
+    animation-fill-mode: forwards;
+}
+.gate2move{
+    animation: gate2 linear 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.bomb{
+    position: relative;
+    width: 30%;
+    margin: 0 5%;
+    background-image: url(../img/bomb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.red-button{
+    width: 20%;
+    background-color: red;
+    border: gray 5px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.red-button:hover{
+    background-color: rgb(206, 2, 2);
+}
+.red-button:active{
+    border: gray 10px solid;
+}
+.red-button:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+  }
+.bomb-timer{
+    position: absolute;
+    left: 30%;
+    top:30%;
+    font-size: 40px;
+    font-family: 'Comic Sans MS';
+}

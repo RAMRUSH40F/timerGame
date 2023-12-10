@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level1.css">
+    <link rel="stylesheet" href="../main/main.css">  
+    <title>Уровень 1</title>
+</head>
+<body>
+    <div class="ui-info">
+        <button class="menu-part button-level" id="back">В меню</button>
+        <div class="ui-element info"> Нажмите на кнопку для начала игры</div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div id="lamp-block1" class="lamp-block">
+                <img id="lamp1" class="lamp" src="../img/laml.png" alt="">
+                <img id="stand1" class="stand" src="../img/stand.png">
+            </div>
+            <div id="lamp-block2" class="lamp-block">
+                <img id="lamp2" class="lamp" src="../img/laml.png" alt="">
+                <img id="stand2" class="stand" src="../img/stand.png">
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="menu-part button-level" id="start-level1" >Начать</button>
+        </div>
+    </div>
+    
+    <div class="modal modal-open">
+        <div class="modal-content content-open">
+            <div class="modal-content-text">
+                <h2 class="modal-text">Уровень 1</h2>
+                <p class="modal-text"> Сложность увеличивает очки, но потребует от вас большей точности </p>
+                <p class="modal-text">Посчитайте время которое проходит между зажиганиями двух лампочек, а затем попробуйте зажечь лампочки с тем же промежутком времени</p>
+            </div>
+            
+            <p class="modal-text">Выбор сложности</p>
+            <select id="difficulty">
+                <option value="1.5">Легкая</option>
+                <option value="1">Нормальная</option>
+                <option value="0.75">Сложная</option>
+                <option value="0.5">Экспертная</option>
+            </select>
+            <div style="display: flex;">
+                <button id="start-game" class="modal-button" > начать</button>
+                <button class="modal-button" id="back1">В меню</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="../main/timer.js"></script>
+<script src="../main/saveScore.js"></script>
+ <script src="level1.js"></script>
+</html>
