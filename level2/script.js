@@ -158,6 +158,8 @@ function main(difficulty) {
             time = 0;
             score = 0;
             gameover_status = false;
+			CANVAS_WIDTH = canvas_example.getContext('2d').width;
+			CANVAS_HEIGHT = canvas_example.getContext('2d').height;
 
             let difficulty = document.querySelector('#difficulty');  
             difficulty = difficulty.options[difficulty.selectedIndex].value;
