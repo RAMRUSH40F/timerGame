@@ -79,10 +79,10 @@ document.querySelector('#start-game').addEventListener('click',()=>{
 })
 
 document.querySelector('#back').addEventListener('click',()=>{
-  document.location='../main/index.html'
+  document.location='../index.html'
 });
 document.querySelector('#back1').addEventListener('click',()=>{
-  document.location='../main/index.html'
+  document.location='../index.html'
 });
 
 

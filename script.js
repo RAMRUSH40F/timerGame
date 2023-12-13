@@ -17,7 +17,7 @@ for(let i=0; i<localStorage.length; i++) {
     }
   }
 
-  nameArr.forEach(item=>{
+  nameArr.forEach(item=>{	
     let userScore = document.createElement('p');
     userScore.innerHTML = `${item.key} : ${item.value}`;
     score.append(userScore);
@@ -25,11 +25,11 @@ for(let i=0; i<localStorage.length; i++) {
 
 
 document.querySelector('#level1').addEventListener('click',()=>{
-  document.location='../level1/level1.html?name='+nameInput.value;
+  document.location='./timerGame/level1/level1.html?name='+nameInput.value;
 });
 document.querySelector('#level3').addEventListener('click',()=>{
-  document.location='../level3/level3.html?name='+nameInput.value;
+  document.location='./timerGame/level3/level3.html?name='+nameInput.value;
 });
 document.querySelector('#level2').addEventListener('click',()=>{
-  document.location='../level2/level2.html?name='+nameInput.value;
+  document.location='./timerGame/level2/level2.html?name='+nameInput.value;
 });
